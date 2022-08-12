@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { menuBar } from "../assets/menubar";
-import { GiHamburgerMenu } from "react-icons/Gi";
+import { GiHamburgerMenu } from "react-icons/gi";
 function aside() {
   const [serach, setSerach] = useState("");
 
