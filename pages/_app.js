@@ -3,7 +3,6 @@ import "../styles/reset.css";
 import Navbar from "../layout/Navbar";
 import Aside from "../layout/Aside";
 
-import { GiHamburgerMenu } from "react-icons/Gi";
 
 function MyApp({ Component, pageProps }) {
   return (
