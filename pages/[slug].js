@@ -29,7 +29,7 @@ export async function getStaticProps({ params: { slug }}) {
 function Doc({content }) {
   return (
 
-        <div className="w-[700px] p-10 ">
+        <div className="max-w-[720px] w-[720px] p-10 bg-neutral-100">
         <Markdown className={"prose prose-neutral prose-a:text-blue-700 hover:prose-a:text-blue-500"}
          options={{
           overrides: {

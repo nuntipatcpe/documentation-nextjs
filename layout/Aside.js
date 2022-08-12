@@ -19,13 +19,13 @@ function aside() {
   //   return 0;
   // });
 
-
   const [active,setActive]= useState('');
   console.log(active);
   // text-neutral-900 bg-neutral-400
   //rounded-md flex ml-5 my-5 p-3 h-10 items-center justify-items-end
   return (
-    <div className="overflow-auto bg-neutral-900 top-20 max-w-[300px] w-full text-white p-4 sticky h-[calc(100vh-5rem)]">
+    <div className="overflow-auto bg-neutral-900 top-10 max-w-[280px] w-full text-neutral-100 pl-5 sticky h-[calc(100vh-2.5rem)]">
+
       <div className="h-20 flex items-center">
         <input
           className="w-full h-[2rem] p-2 rounded-md border-none text-neutral-900"
@@ -38,11 +38,11 @@ function aside() {
         const data = subMenu.filter(({path})=>path.toLowerCase().includes(serach.toLowerCase()));
         return (
           <nav key={id}>
-            <p className=" mx- h-5">{id}</p>
+            <p className=" mx-1 my-2 flex items-center font-bold">{id}</p>
             {data.map(({path,name}) => {
               return (
                 <Link key={path} href={path}>
-                  <a className={active===name?'rounded-md flex ml-5 my-5 p-3 h-10 items-center justify-items-end text-neutral-900 bg-neutral-400':'rounded-md flex ml-5 my-5 p-3 h-10 items-center justify-items-end'} onClick={()=>setActive(name)}>{name}</a>
+                  <a className={active===name?'rounded-l-md flex ml-5 p-3 h-8 items-center justify-items-end text-neutral-900 bg-neutral-100':'rounded-l-md flex ml-5 p-3 h-8 items-center justify-items-end'} onClick={()=>setActive(name)}>{name}</a>
                 </Link>
               );
             })}
