@@ -35,10 +35,10 @@ function aside() {
   //rounded-md flex ml-5 my-5 p-3 h-10 items-center justify-items-end
   return (
     <div
-      className={`top-10 w-full text-neutral-100 pl-5 h-[calc(100vh-2.5rem)] fixed z-50  ${
+      className={`top-10 w-full text-neutral-100 pl-5 h-[calc(100vh-2.5rem)] fixed z-50 sm:sticky  ${
         toggle
-          ? "max-w-[280px] left-0 overflow-auto bg-neutral-900 sticky"
-          : "sm:sticky max-w-[30px] sm:max-w-[280px] sm:overflow-auto  sm:bg-neutral-900"
+          ? "max-w-[280px] left-0 overflow-auto bg-neutral-900 "
+          : "max-w-[30px] sm:max-w-[280px] sm:overflow-auto  sm:bg-neutral-900"
       }`}
     >
       <div
