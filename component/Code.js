@@ -16,7 +16,7 @@ function Code({ children }) {
     <>
          {/* onMouseOut={()=>setCopyAc(false)} */}
         <div className="con-Icon" >
-             <CopyToClipboard text={children} onCopy={()=>setTextCoppy(true)}>
+            <CopyToClipboard text={children} onCopy={()=>setTextCoppy(true)}>
                 <FaCopy className={copyAc? 'Icon-active': 'Icon'}/>
             </CopyToClipboard>
             {children}

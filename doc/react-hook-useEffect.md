@@ -1,4 +1,4 @@
-## useEffect
+# useEffect
 
 **Check for changes In application.**
 **This will render the new component.**
