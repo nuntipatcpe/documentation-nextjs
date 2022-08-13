@@ -303,6 +303,14 @@ export function menuBar() {
           name: "Get Started",
           path: "/api-get-started",
         },
+        {
+          name: "Fetch API",
+          path: "/api-fetch",
+        },
+        {
+          name: "Axios API",
+          path: "/api-axios",
+        },
       ],
     },
     //Function javascript
