@@ -42,12 +42,12 @@ function aside() {
       }`}
     >
       <div
-        className={`i-menu fixed top-10  p-2 z-[1000] sm:hidden text-neutral-900 ${
+        className={`i-menu fixed top-10  p-2 z-[1000] sm:hidden ${
           toggle ? "right-0" : "left-0"
         }`}
         onClick={() => setToggle(!toggle)}
       >
-        <GiHamburgerMenu className=" w-5 h-5 " />
+        <GiHamburgerMenu className=" w-5 h-5 text-neutral-900" />
       </div>
 
       <div
