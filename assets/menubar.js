@@ -14,7 +14,7 @@ export function menuBar() {
         },
       ],
     },
-     //Git
+    //Git
     {
       id: "Git",
       subMenu: [
@@ -182,10 +182,12 @@ export function menuBar() {
           name: "Loop Array",
           path: "/javascript-es6-Loop-array",
         },
-      
+        {
+          name: "Asynchronous",
+          path: "/javascript-es6-asynchronous",
+        },
       ],
     },
-
     //React
     {
       id: "React",
@@ -222,7 +224,7 @@ export function menuBar() {
           name: "React Hook",
           path: "/react-hook",
         },
-      
+
         {
           name: "useState",
           path: "/react-hook-useState",
@@ -240,6 +242,10 @@ export function menuBar() {
           path: "/react-hook-useReducer",
         },
         {
+          name: "Custom hook ",
+          path: "/react-custom-hook",
+        },
+        {
           name: "Context API",
           path: "/react-context-API",
         },
@@ -251,24 +257,54 @@ export function menuBar() {
           name: "Router DOM V5",
           path: "/react-router-DOM-V5",
         },
-      
+      ],
+    },
+    //Redux
+    {
+      id: "Redux",
+      subMenu: [
+        {
+          name: "Redux Toolkit",
+          path: "/redux-toolkit",
+        },
       ],
     },
     //scss
     {
-    id: "Sass",
-    subMenu: [
-      {
-        name: "Get started",
-        path: "/sass-get-started",
-      },
-      {
-        name: "Folder style",
-        path: "/sass-folder-style ",
-      },
-    ],
+      id: "Sass",
+      subMenu: [
+        {
+          name: "Get started",
+          path: "/sass-get-started",
+        },
+        {
+          name: "Folder style",
+          path: "/sass-folder",
+        },
+        {
+          name: "Use",
+          path: "/sass-use",
+        },
+        {
+          name: "Forward",
+          path: "/sass-forward",
+        },
+        {
+          name: "Mixin",
+          path: "/sass-mixin",
+        },
+      ],
     },
-
+    //API
+    {
+      id: "API",
+      subMenu: [
+        {
+          name: "Get Started",
+          path: "/api-get-started",
+        },
+      ],
+    },
     //Function javascript
     {
       id: "Function javascript",
@@ -277,7 +313,6 @@ export function menuBar() {
           name: "Comma number",
           path: "/function-javascript-comma-number",
         },
-      
       ],
     },
     //Windows tool
@@ -296,7 +331,6 @@ export function menuBar() {
           name: "Driver",
           path: "/windows-driver",
         },
-
       ],
     },
     //Command-line
@@ -307,28 +341,26 @@ export function menuBar() {
           name: "Linux",
           path: "/command-linux",
         },
-      
+
         {
           name: "Policy powershell",
           path: "/command-error-policy-powershell",
         },
-      
       ],
     },
-
   ];
 
   return menu;
 }
 
-   ////name
-  //  {
-  //   id: "",
-  //   subMenu: [
-  //     {
-  //       name: "",
-  //       path: "/",
-  //     },
-    
-  //   ],
-  // },
+////name
+//  {
+//   id: "",
+//   subMenu: [
+//     {
+//       name: "",
+//       path: "/",
+//     },
+
+//   ],
+// },
