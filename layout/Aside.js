@@ -37,24 +37,24 @@ function aside() {
     <div
       className={`top-10 w-full text-neutral-100 pl-5 h-[calc(100vh-2.5rem)] fixed z-50 sm:sticky  ${
         toggle
-          ? "max-w-[280px] left-0 overflow-auto bg-neutral-900 "
+          ? "max-w-[100vw] left-0 overflow-auto bg-neutral-900 "
           : "max-w-[30px] sm:max-w-[280px] sm:overflow-auto  sm:bg-neutral-900"
       }`}
     >
       <div
         className={`i-menu fixed top-10  p-2 z-[1000] sm:hidden ${
-          toggle ? "right-0" : "left-0"
+          toggle ? "right-0 text-neutral-100" : "left-0 text-neutral-900"
         }`}
         onClick={() => setToggle(!toggle)}
       >
-        <GiHamburgerMenu className=" w-5 h-5 text-neutral-900" />
+        <GiHamburgerMenu className=" w-5 h-5" />
       </div>
 
       <div
         className={`h-20 items-center ${toggle ? "flex" : "hidden sm:flex"}`}
       >
         <input
-          className={`w-full h-[2rem] p-2 rounded-md border-none text-neutral-900 ${
+          className={`w-full h-[2rem] p-2 rounded-md border-none text-neutral-900 mt-5 ${
             toggle ? "flex " : "hidden sm:flex"
           }`}
           type="text"
