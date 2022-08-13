@@ -266,8 +266,6 @@ export function menuBar() {
         name: "Folder style",
         path: "/sass-folder-style ",
       },
-  
-    
     ],
     },
 
@@ -280,6 +278,25 @@ export function menuBar() {
           path: "/function-javascript-comma-number",
         },
       
+      ],
+    },
+    //Windows tool
+    {
+      id: "Windows tool",
+      subMenu: [
+        {
+          name: "Dev Tool",
+          path: "/windows-dev-tool",
+        },
+        {
+          name: "Program",
+          path: "/windows-program",
+        },
+        {
+          name: "Driver",
+          path: "/windows-driver",
+        },
+
       ],
     },
     //Command-line

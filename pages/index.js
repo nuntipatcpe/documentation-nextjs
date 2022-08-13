@@ -5,12 +5,8 @@ import Navbar from "../layout/Navbar";
 
 export default function Home() {
   return (
-    <div className="main">
-    <div className="container">
-      <div className="con-markdown">
-      
-      </div>
+    <div className="max-w-[720px] w-[720px] p-10 bg-neutral-50 overflow-auto">
+        Hello
     </div>
-  </div>
   );
 }
