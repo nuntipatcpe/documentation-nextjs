@@ -1,9 +1,17 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { menuBar } from "../assets/menubar";
-import { GiHamburgerMenu } from "react-icons/gi";
+
+// import { GiHamburgerMenu } from "react-icons/gi";
+
+import { GiHamburgerMenu } from "@react-icons/all-files/gi/GiHamburgerMenu";
+
 function aside() {
   const [serach, setSerach] = useState("");
+  const [menuData, setMenuData] = useState();
+  
+  const [toggle, setToggle] = useState(false);
+  const [active, setActive] = useState("");
 
   const menu = menuBar().filter(({ subMenu }) =>
     subMenu.some(({ path }) =>
@@ -11,28 +19,10 @@ function aside() {
     )
   );
 
-  //   menu.sort((a, b) => {
-  //   const nameA = a.subMenu.map(({name})=>name.toUpperCase()); // ignore upper and lowercase
-  //   const nameB = b.subMenu.map(({name})=>name.toUpperCase()); // ignore upper and lowercase
-  //   if (nameA < nameB) {
-  //     return -1;
-  //   }
-  //   if (nameA > nameB) {
-  //     return 1;
-  //   }
-
-  //   // names must be equal
-  //   return 0;
-  // });
-  const [toggle, setToggle] = useState(false);
-  const [active, setActive] = useState("");
-
   const mobileClinck=(name)=>{
     setActive(name);
     setToggle(!toggle);
   }
-  // text-neutral-900 bg-neutral-400
-  //rounded-md flex ml-5 my-5 p-3 h-10 items-center justify-items-end
   return (
     <div
       className={`top-10 w-full text-neutral-100 pl-5 h-[calc(100vh-2.5rem)] fixed z-50 sm:sticky pb-20 sm:max-w-[280px] ${
@@ -47,6 +37,7 @@ function aside() {
         }`}
         onClick={() => setToggle(!toggle)}
       >
+        {/* <div className="w-5 h-5">Menu</div> */}
         <GiHamburgerMenu className=" w-5 h-5" />
       </div>
 
@@ -97,7 +88,6 @@ function aside() {
             })}
           </nav>
         );
-      
       })}
     </div>
   );
@@ -129,3 +119,18 @@ export default aside;
 //         );
 //       })}
 //     </div>
+
+
+  //   menu.sort((a, b) => {
+  //   const nameA = a.subMenu.map(({name})=>name.toUpperCase()); // ignore upper and lowercase
+  //   const nameB = b.subMenu.map(({name})=>name.toUpperCase()); // ignore upper and lowercase
+  //   if (nameA < nameB) {
+  //     return -1;
+  //   }
+  //   if (nameA > nameB) {
+  //     return 1;
+  //   }
+
+  //   // names must be equal
+  //   return 0;
+  // });

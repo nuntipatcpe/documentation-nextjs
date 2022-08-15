@@ -10,11 +10,9 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Documentation</title>
-        {/* <meta name="viewport" content="width=device-width, initial-scale=1"/> */}
       </Head>
       <Navbar />
       <div className="flex justify-center mt-10 bg-neutral-900">
-        {/* <div className="w-full h-20 bg-neutral-600"></div> */}
         <Aside />
         <Component {...pageProps} />
       </div>

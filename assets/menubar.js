@@ -1,16 +1,16 @@
 export function menuBar() {
-  const menu = [
+  let menu = [
     //Vscode
     {
       id: "Vscode",
       subMenu: [
         {
           name: "Setting Emmet",
-          path: "/vscode-setting-emmet",
+          path: "/document/vscode-setting-emmet",
         },
         {
           name: "Extension",
-          path: "/vscode-extension",
+          path: "/document/vscode-extension",
         },
       ],
     },
@@ -20,27 +20,27 @@ export function menuBar() {
       subMenu: [
         {
           name: "Configure Global",
-          path: "/git-configure-global",
+          path: "/document/git-configure-global",
         },
         {
           name: "Add and Clon File",
-          path: "/git-add-clon-file",
+          path: "/document/git-add-clon-file",
         },
         {
           name: "Branch",
-          path: "/git-branch",
+          path: "/document/git-branch",
         },
         {
           name: "Merge",
-          path: "/git-merge",
+          path: "/document/git-merge",
         },
         {
           name: "Fetch",
-          path: "/git-fetch",
+          path: "/document/git-fetch",
         },
         {
           name: "Remode",
-          path: "/git-remode",
+          path: "/document/git-remode",
         },
       ],
     },
@@ -50,79 +50,79 @@ export function menuBar() {
       subMenu: [
         {
           name: "Reset",
-          path: "/css-reset",
+          path: "/document/css-reset",
         },
         {
           name: "Scrollbar",
-          path: "/css-scrollbar",
+          path: "/document/css-scrollbar",
         },
         {
           name: "Unit",
-          path: "/css-unit",
+          path: "/document/css-unit",
         },
         {
           name: "Fonts",
-          path: "/css-fonts",
+          path: "/document/css-fonts",
         },
         {
           name: "Colors",
-          path: "/css-colors",
+          path: "/document/css-colors",
         },
         {
           name: "Text Decoration",
-          path: "/css-text-decoration",
+          path: "/document/css-text-decoration",
         },
         {
           name: "Text Align",
-          path: "/css-text-align",
+          path: "/document/css-text-align",
         },
         {
           name: "Border",
-          path: "/css-border",
+          path: "/document/css-border",
         },
         {
           name: "Margin and Padding",
-          path: "/css-margin-padding",
+          path: "/document/css-margin-padding",
         },
         {
           name: "Background",
-          path: "/css-background",
+          path: "/document/css-background",
         },
         {
           name: "Float and Clear",
-          path: "/css-float-clear",
+          path: "/document/css-float-clear",
         },
         {
           name: "Link",
-          path: "/css-link",
+          path: "/document/css-link",
         },
         {
           name: "Position",
-          path: "/css-position",
+          path: "/document/css-position",
         },
         {
           name: "Layer",
-          path: "/css-layer",
+          path: "/document/css-layer",
         },
         {
           name: "Link in page smooth",
-          path: "/css-Link-page-smooth",
+          path: "/document/css-Link-page-smooth",
         },
         {
           name: "Overflow",
-          path: "/css-overflow",
+          path: "/document/css-overflow",
         },
         {
           name: "Cursor Stype",
-          path: "/css-cursor-stype",
+          path: "/document/css-cursor-stype",
         },
         {
           name: "Box-shadow",
-          path: "/css-box-shadow",
+          path: "/document/css-box-shadow",
         },
         {
           name: "Media Query",
-          path: "/css-media-query",
+          path: "/document/css-media-query",
         },
       ],
     },
@@ -132,59 +132,59 @@ export function menuBar() {
       subMenu: [
         {
           name: "Block Scope",
-          path: "/javascript-es6-block-scope",
+          path: "/document/javascript-es6-block-scope",
         },
         {
           name: "Arrow Function",
-          path: "/javascript-es6-arrow-function",
+          path: "/document/javascript-es6-arrow-function",
         },
         {
           name: "Object",
-          path: "/javascript-es6-object",
+          path: "/document/javascript-es6-object",
         },
         {
           name: "String",
-          path: "/javascript-es6-string",
+          path: "/document/javascript-es6-string",
         },
         {
           name: "Spread Operator",
-          path: "/javascript-es6-spread-operator",
+          path: "/document/javascript-es6-spread-operator",
         },
         {
           name: "Rest Parameter",
-          path: "/javascript-es6-rest-parameter",
+          path: "/document/javascript-es6-rest-parameter",
         },
         {
           name: "Destructionring",
-          path: "/javascript-es6-destructionring",
+          path: "/document/javascript-es6-destructionring",
         },
         {
           name: "Default Parameter",
-          path: "/javascript-es6-default-parameter",
+          path: "/document/javascript-es6-default-parameter",
         },
         {
           name: "Array Function",
-          path: "/javascript-es6-array-function",
+          path: "/document/javascript-es6-array-function",
         },
         {
           name: "Map Function",
-          path: "/javascript-es6-map-function",
+          path: "/document/javascript-es6-map-function",
         },
         {
           name: "Filter Function",
-          path: "/javascript-es6-filter-function",
+          path: "/document/javascript-es6-filter-function",
         },
         {
           name: "Reduce Function",
-          path: "/javascript-es6-reduce-function",
+          path: "/document/javascript-es6-reduce-function",
         },
         {
           name: "Loop Array",
-          path: "/javascript-es6-Loop-array",
+          path: "/document/javascript-es6-Loop-array",
         },
         {
           name: "Asynchronous",
-          path: "/javascript-es6-asynchronous",
+          path: "/document/javascript-es6-asynchronous",
         },
       ],
     },
@@ -194,68 +194,68 @@ export function menuBar() {
       subMenu: [
         {
           name: "React DOM",
-          path: "/react-react-dom",
+          path: "/document/react-react-dom",
         },
         {
           name: "JSX",
-          path: "/react-JSX",
+          path: "/document/react-JSX",
         },
         {
           name: "JSX Dynamic Data",
-          path: "/react-jsx-dynamic-data",
+          path: "/document/react-jsx-dynamic-data",
         },
         {
           name: "JSX Style and ClassName",
-          path: "/react-jsx-style-and-className",
+          path: "/document/react-jsx-style-and-className",
         },
         {
           name: "Component",
-          path: "/react-component",
+          path: "/document/react-component",
         },
         {
           name: "Nested components",
-          path: "/react-nested-components",
+          path: "/document/react-nested-components",
         },
         {
           name: "Props",
-          path: "/react-props",
+          path: "/document/react-props",
         },
         {
           name: "React Hook",
-          path: "/react-hook",
+          path: "/document/react-hook",
         },
 
         {
           name: "useState",
-          path: "/react-hook-useState",
+          path: "/document/react-hook-useState",
         },
         {
           name: "useEffect",
-          path: "/react-hook-useEffect",
+          path: "/document/react-hook-useEffect",
         },
         {
           name: "useContext",
-          path: "/react-hook-useContext",
+          path: "/document/react-hook-useContext",
         },
         {
           name: "useReducer",
-          path: "/react-hook-useReducer",
+          path: "/document/react-hook-useReducer",
         },
         {
           name: "Custom hook ",
-          path: "/react-custom-hook",
+          path: "/document/react-custom-hook",
         },
         {
           name: "Context API",
-          path: "/react-context-API",
+          path: "/document/react-context-API",
         },
         {
           name: "Router DOM V6",
-          path: "/react-router-DOM-V6",
+          path: "/document/react-router-DOM-V6",
         },
         {
           name: "Router DOM V5",
-          path: "/react-router-DOM-V5",
+          path: "/document/react-router-DOM-V5",
         },
       ],
     },
@@ -265,7 +265,7 @@ export function menuBar() {
       subMenu: [
         {
           name: "Redux Toolkit",
-          path: "/redux-toolkit",
+          path: "/document/redux-toolkit",
         },
       ],
     },
@@ -275,23 +275,23 @@ export function menuBar() {
       subMenu: [
         {
           name: "Get started",
-          path: "/sass-get-started",
+          path: "/document/sass-get-started",
         },
         {
           name: "Folder style",
-          path: "/sass-folder",
+          path: "/document/sass-folder",
         },
         {
           name: "Use",
-          path: "/sass-use",
+          path: "/document/sass-use",
         },
         {
           name: "Forward",
-          path: "/sass-forward",
+          path: "/document/sass-forward",
         },
         {
           name: "Mixin",
-          path: "/sass-mixin",
+          path: "/document/sass-mixin",
         },
       ],
     },
@@ -301,15 +301,15 @@ export function menuBar() {
       subMenu: [
         {
           name: "Get Started",
-          path: "/api-get-started",
+          path: "/document/api-get-started",
         },
         {
           name: "Fetch API",
-          path: "/api-fetch",
+          path: "/document/api-fetch",
         },
         {
           name: "Axios API",
-          path: "/api-axios",
+          path: "/document/api-axios",
         },
       ],
     },
@@ -319,7 +319,7 @@ export function menuBar() {
       subMenu: [
         {
           name: "Comma number",
-          path: "/function-javascript-comma-number",
+          path: "/document/function-javascript-comma-number",
         },
       ],
     },
@@ -329,15 +329,15 @@ export function menuBar() {
       subMenu: [
         {
           name: "Dev Tool",
-          path: "/windows-dev-tool",
+          path: "/document/windows-dev-tool",
         },
         {
           name: "Program",
-          path: "/windows-program",
+          path: "/document/windows-program",
         },
         {
           name: "Driver",
-          path: "/windows-driver",
+          path: "/document/windows-driver",
         },
       ],
     },
@@ -347,12 +347,12 @@ export function menuBar() {
       subMenu: [
         {
           name: "Linux",
-          path: "/command-linux",
+          path: "/document/command-linux",
         },
 
         {
           name: "Policy powershell",
-          path: "/command-error-policy-powershell",
+          path: "/document/command-error-policy-powershell",
         },
       ],
     },
@@ -367,7 +367,7 @@ export function menuBar() {
 //   subMenu: [
 //     {
 //       name: "",
-//       path: "/",
+//       path: "/document/",
 //     },
 
 //   ],
