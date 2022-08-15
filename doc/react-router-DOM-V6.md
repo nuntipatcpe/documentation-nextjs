@@ -71,6 +71,9 @@ Path other
 **Link** tag
 
 ```
+import { Link } from "react-router-dom";
+```
+```
 <Link to="/pathname"> </Link>
 ```
 
