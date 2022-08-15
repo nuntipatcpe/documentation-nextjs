@@ -22,14 +22,14 @@ export const getStaticProps = ()=>{
   // }
 
 
-  if (Cookies.get('password')!=='1234') {
-    return {
-      redirect: {
-        destination: '/login',
-        permanent: false,
-      },
-    }
-  }
+  // if (Cookies.get('password')!=='1234') {
+  //   return {
+  //     redirect: {
+  //       destination: '/login',
+  //       permanent: false,
+  //     },
+  //   }
+  // }
 
   return {
     props: { user },
