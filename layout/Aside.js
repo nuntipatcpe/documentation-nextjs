@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { menuBar } from "../assets/menubar";
 
+
+
 // import { GiHamburgerMenu } from "react-icons/gi";
 
 import { GiHamburgerMenu } from "@react-icons/all-files/gi/GiHamburgerMenu";

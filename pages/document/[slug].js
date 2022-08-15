@@ -23,7 +23,7 @@ export async function getStaticProps({ params: { slug } }) {
   const fileName = fs.readFileSync(`doc/${slug}.md`, "utf-8");
   const { content } = matter(fileName);
 
-  if (true) {
+  if (false) {
     return {
       redirect: {
         destination: "/login",

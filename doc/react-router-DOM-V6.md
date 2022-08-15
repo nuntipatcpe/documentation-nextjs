@@ -1,70 +1,97 @@
 # React Router DOM V6
 
 ## install
+
 ```
 npm install react-router-dom
 ```
 
-- import
+## Configuring Routes
 
 ```
-import { BrowserRouter as Router, Routes , Route, Link } from "react-router-dom";
+import { BrowserRouter
+        , Routes
+        , Route
+    } from "react-router-dom";
 ```
-- Create **Router**
 
 ```
-<Router>
+ <BrowserRouter>
+    <Routes>
+        <Route path="/" element={<App />}>
+            <Route index element={<Home />} />
+            <Route path="teams" element={<Teams />}>
+                <Route path=":teamId" element={<Team />} />
+                <Route path="new" element={<NewTeamForm />} />
+                <Route index element={<LeagueStandings />} />
+            </Route>
+        </Route>
+    </Routes>
+  </BrowserRouter>
+```
+
+- **Router**
+
+```
+<BrowserRouter>
     <></>
-</Router>
+</BrowserRouter>
 ```
-- Create **Routes**
+
+- **Routes**
+
+First page
 
 ```
 <Routes>
-    <Route path="/pathname" element={<></>}/>
+    <Route index element={<Home />} />
 </Routes>
 ```
-- Create **Link**
+
+or
+
+```
+oute path="/" element={<Team />} />
+```
+
+Path other
+
+```
+<Routes>
+     <Route path="teams" element={<Teams />}>
+        <Route path=":teamId" element={<Team />} />
+        <Route path="new" element={<NewTeamForm />} />
+        <Route index element={<LeagueStandings />} />
+    </Route>
+</Routes>
+```
+
+## Navigation
+
+**Link** tag
 
 ```
 <Link to="/pathname"> </Link>
 ```
 
-**Usage**
-
-- App.js
+**useNavigate** to do it yoursel
 
 ```
-import { BrowserRouter,Routes,Route} from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 ```
-```
-return (
-    <>
-        <BrowserRouter>
-            <Routes>
-                <Route path="/pathname" element={</component>}/>
-            </Routes>
-        </BrowserRouter>
-    </>
-)
-```
-- Component.js
 
 ```
-import { Link} from "react-router-dom";
+function(e){
+    let navigate = useNavigate();
+    if(e){
+        navigate.(`/path`);
+    }
+}
 ```
-```
-return (
-    <>
-        <nav>
-            <Link to="/pathname">link</Link>
-        </nav>
-    </>
-)
-```
-## useParams
 
-- set Route **:id**
+## Reading URL Parameters
+
+- Set Route **:id**
 
 ```
 <Route path='/Products/:id' element={<Products/>} />
@@ -74,7 +101,16 @@ return (
 
 ```
 import{useParams} from 'react-router-dom'
-``` 
+```
+
 ```
 const {id} = useParams();
+```
+
+## Not Found Routes
+
+set path =**" * "**
+
+```
+ <Route path="*" element={<NotFound />} />
 ```
