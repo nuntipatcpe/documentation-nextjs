@@ -4,7 +4,7 @@ import {Aut} from '../assets/username';
 
 import { useRouter } from 'next/router';
 
-function login() {
+function Login() {
     const [username , setUserName]= useState('');
     const [password , setPassword]= useState('');
 
@@ -48,8 +48,6 @@ function login() {
     }
 
     
-   
-
 
   return (
     <div className="max-w-[720px] w-[720px] p-10 h-[100vh] bg-neutral-50 overflow-auto flex justify-center items-center">
@@ -70,4 +68,4 @@ function login() {
   )
 }
 
-export default login
+export default Login
