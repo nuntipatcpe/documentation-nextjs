@@ -1,9 +1,10 @@
-import React from "react";
+import React ,{useEffect,useState}from "react";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
 import fs from "fs";
 import Code from "../../component/Code";
-
+// import { user} from "../assets/username";
+import { user} from "../../assets/username";
 import { useRouter } from "next/router";
 
 export async function getStaticPaths() {
@@ -46,7 +47,20 @@ function Doc({ content }) {
   // // }
   // console.log(router);
 
-  return (
+  const [valid, setValid] = useState(false);
+  const round =useRouter();
+
+  useEffect(()=>{
+    if(localStorage.getItem("token") === `${user.id}_${user.password}_valid` ){
+      setValid(true);
+      console.log(valid);
+    }else{
+      round.push('/login');
+    }
+  },[]);
+
+  if(valid){
+    return (
     <div className="max-w-[720px] w-[720px] p-10 bg-neutral-50 overflow-auto">
       <Markdown
         className={
@@ -64,6 +78,13 @@ function Doc({ content }) {
       </Markdown>
     </div>
   );
+  }
+  return (
+    <div className="max-w-[720px] w-[720px] p-10 bg-neutral-50 overflow-auto">
+      
+    </div>
+  )
+  
 }
 
 export default Doc;

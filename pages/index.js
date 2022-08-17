@@ -1,14 +1,13 @@
 import Link from 'next/link'
 
-import { Aut } from '../assets/username';
+import{ useEffect, useState } from 'react';
+import { useRouter } from 'next/router';
+import { user} from "../assets/username";
 
-import Cookies from 'js-cookie';
 
 export const getStaticProps = ()=>{
 
-  const user = Aut().id
 
-  
   // function getCookie(name){
   //   const cDecoded = decodeURIComponent(document.cookie);
   //   const cArrey = cDecoded.split("; ");
@@ -32,19 +31,47 @@ export const getStaticProps = ()=>{
   // }
 
   return {
-    props: { user },
+    props: {  },
   }
 }
 
 
-export default function Home({ user }) {
+export default function Home() {
 
-  Cookies.set('boom','1');
-  console.log(Cookies.get('password'));
+  const [valid, setValid] = useState(false);
+  
+  const round =useRouter();
+  
+  useEffect(()=>{
+    if(localStorage.getItem("token") === `${user.id}_${user.password}_valid` ){
+      setValid(true);
+      console.log(valid);
+    }else{
+      round.push('/login');
+    }
+  },[]);
 
-  return (
+  function onLogout (){
+    console.log('onLogout');
+    localStorage.removeItem("token");
+    round.push('/login');
+  }
+
+  // setValid.set(true);
+  // Cookies.set('boom','1');
+  // console.log(Cookies.get('password'));
+  if(valid){
+    return (
     <div className="max-w-[720px] w-[720px] p-10 bg-neutral-50 overflow-auto">
        Home
+       <button className='bg-neutral-900 text-neutral-50 my-2 p-2 w-full' onClick={()=>onLogout()}>Logout</button>
     </div>
   );
+  }
+  return (
+    <div className="max-w-[720px] w-[720px] p-10 bg-neutral-50 overflow-auto">
+    
+    </div>
+  )
+  
 }
