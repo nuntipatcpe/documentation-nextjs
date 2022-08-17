@@ -23,6 +23,10 @@ export function menuBar() {
           path: "/document/git-configure-global",
         },
         {
+          name: "Commit Message",
+          path: "/document/git-commit-message",
+        },
+        {
           name: "Add and Clon File",
           path: "/document/git-add-clon-file",
         },
