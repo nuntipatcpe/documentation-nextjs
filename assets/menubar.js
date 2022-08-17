@@ -193,8 +193,8 @@ export function menuBar() {
       id: "React",
       subMenu: [
         {
-          name: "React DOM",
-          path: "/document/react-react-dom",
+          name: "Get Started",
+          path: "/document/react-get-started",
         },
         {
           name: "JSX",
