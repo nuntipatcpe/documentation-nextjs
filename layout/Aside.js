@@ -73,7 +73,7 @@ function aside() {
                 <Link key={path} href={path}>
                   <a
                     className={
-                      active === name
+                      active === path
                         ? `rounded-l-md flex ml-5 p-3 h-8 items-center justify-items-end text-neutral-900 bg-neutral-100 ${
                             toggle ? "flex" : "hidden sm:flex"
                           }`
@@ -81,7 +81,7 @@ function aside() {
                             toggle ? "flex" : "hidden sm:flex"
                           }`
                     }
-                    onClick={() => mobileClinck(name)}
+                    onClick={() => mobileClinck(path)}
                   >
                     {name}
                   </a>

@@ -259,6 +259,18 @@ export function menuBar() {
         },
       ],
     },
+
+    //NexJs
+    {
+      id:'NexJS',
+      subMenu:[
+        {
+          name:'Get Started',
+          path: "/document/nextjs-get-started",
+        }
+
+      ]
+    },
     //Redux
     {
       id: "Redux",
@@ -274,7 +286,7 @@ export function menuBar() {
       id: "Sass",
       subMenu: [
         {
-          name: "Get started",
+          name: "Get Started",
           path: "/document/sass-get-started",
         },
         {
@@ -349,7 +361,6 @@ export function menuBar() {
           name: "Linux",
           path: "/document/command-linux",
         },
-
         {
           name: "Policy powershell",
           path: "/document/command-error-policy-powershell",

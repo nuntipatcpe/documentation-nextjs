@@ -9,7 +9,6 @@ import { useRouter } from "next/router";
 
 export async function getStaticPaths() {
   const files = fs.readdirSync("doc");
-
   const paths = files.map((fileName) => ({
     params: {
       slug: fileName.replace(".md", ""),
@@ -23,15 +22,6 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params: { slug } }) {
   const fileName = fs.readFileSync(`doc/${slug}.md`, "utf-8");
   const { content } = matter(fileName);
-
-  if (false) {
-    return {
-      redirect: {
-        destination: "/login",
-        permanent: false,
-      },
-    };
-  }
 
   return {
     props: {
