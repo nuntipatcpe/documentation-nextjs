@@ -1,17 +1,10 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { menuBar } from "../assets/menubar";
-
-
-
-// import { GiHamburgerMenu } from "react-icons/gi";
-
 import { GiHamburgerMenu } from "@react-icons/all-files/gi/GiHamburgerMenu";
 
 function aside() {
   const [serach, setSerach] = useState("");
-  const [menuData, setMenuData] = useState();
-  
   const [toggle, setToggle] = useState(false);
   const [active, setActive] = useState("");
 
@@ -21,17 +14,18 @@ function aside() {
     )
   );
 
-  const mobileClinck=(name)=>{
+  const mobileClinck = (name) => {
     setActive(name);
     setToggle(!toggle);
-  }
+  };
   return (
     <div
       className={`top-10 w-full text-neutral-100 pl-5 h-[calc(100vh-2.5rem)] fixed z-50 sm:sticky pb-20 sm:max-w-[280px] ${
         toggle
           ? "left-0 overflow-auto bg-neutral-900 "
-          : "max-w-[30px] sm:max-w-[280px] sm:overflow-auto  sm:bg-neutral-900"
+          : "max-w-[30px] sm:max-w-[280px] sm:overflow-auto sm:bg-neutral-900"
       }`}
+      a
     >
       <div
         className={`i-menu fixed top-10  p-2 z-[1000] sm:hidden ${
@@ -39,7 +33,6 @@ function aside() {
         }`}
         onClick={() => setToggle(!toggle)}
       >
-        {/* <div className="w-5 h-5">Menu</div> */}
         <GiHamburgerMenu className=" w-5 h-5" />
       </div>
 
@@ -122,17 +115,16 @@ export default aside;
 //       })}
 //     </div>
 
+//   menu.sort((a, b) => {
+//   const nameA = a.subMenu.map(({name})=>name.toUpperCase()); // ignore upper and lowercase
+//   const nameB = b.subMenu.map(({name})=>name.toUpperCase()); // ignore upper and lowercase
+//   if (nameA < nameB) {
+//     return -1;
+//   }
+//   if (nameA > nameB) {
+//     return 1;
+//   }
 
-  //   menu.sort((a, b) => {
-  //   const nameA = a.subMenu.map(({name})=>name.toUpperCase()); // ignore upper and lowercase
-  //   const nameB = b.subMenu.map(({name})=>name.toUpperCase()); // ignore upper and lowercase
-  //   if (nameA < nameB) {
-  //     return -1;
-  //   }
-  //   if (nameA > nameB) {
-  //     return 1;
-  //   }
-
-  //   // names must be equal
-  //   return 0;
-  // });
+//   // names must be equal
+//   return 0;
+// });

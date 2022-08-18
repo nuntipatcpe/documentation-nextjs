@@ -3,14 +3,14 @@ import { useRouter } from "next/router";
 import { user } from "../assets/username";
 
 //styles
-import button from "../styles/abstract/button";
-import layout from "../styles/abstract/layout";
+import button from "../styles/tailwind/button";
+import layout from "../styles/tailwind/layout";
 
 export default function Home() {
   const [valid, setValid] = useState(false);
   const round = useRouter();
 
-  const {LogOutStyle} = button();
+  const {logOutStyle} = button();
   const {container} = layout();
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export default function Home() {
       <div className={container}>
         Home
         <button
-          className={LogOutStyle}
+          className={logOutStyle}
           onClick={() => onLogout()}
         >
           Logout

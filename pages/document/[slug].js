@@ -7,6 +7,9 @@ import Code from "../../component/Code";
 import { user} from "../../assets/username";
 import { useRouter } from "next/router";
 
+//stlye
+import layout from "../../styles/tailwind/layout";
+
 export async function getStaticPaths() {
   const files = fs.readdirSync("doc");
   const paths = files.map((fileName) => ({
@@ -36,6 +39,7 @@ function Doc({ content }) {
 
   // // }
   // console.log(router);
+  const {container} = layout();
 
   const [valid, setValid] = useState(false);
   const round =useRouter();
@@ -51,7 +55,7 @@ function Doc({ content }) {
 
   if(valid){
     return (
-    <div className="max-w-[720px] w-[720px] p-10 bg-neutral-50 overflow-auto">
+    <div className={container}>
       <Markdown
         className={
           "prose prose-neutral prose-a:text-blue-700 hover:prose-a:text-blue-500"
@@ -70,7 +74,7 @@ function Doc({ content }) {
   );
   }
   return (
-    <div className="max-w-[720px] w-[720px] p-10 bg-neutral-50 overflow-auto">
+    <div className={container}>
       
     </div>
   )
