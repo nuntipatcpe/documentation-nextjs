@@ -7,6 +7,7 @@ pnpm i axios
 ```
 
 ## Request method aliases
+
 - axios.**request**(config)
 - axios.**get**(url[, config])
 - axios.**delete**(url[, config])
@@ -16,8 +17,6 @@ pnpm i axios
 - axios.**put**(url[, data[, config]])
 - axios.**patch**(url[, data[, config]])
 
-
-
 ## GET Method
 
 - basic
@@ -26,6 +25,7 @@ pnpm i axios
 axios.get('https://pathApi..')
     .then(res => console.log(res.data))
 ```
+
 - catch
 
 ```
@@ -33,15 +33,17 @@ axios.get('https://pathApi..')
     .then(res => console.log(res.data))
     .catch(error => console.log(error))
 ```
+
 **Abort fetching API**
 
 - Create controller and signal
 
 ```
-const controller = AbortController(); 
+const controller = AbortController();
 ```
+
 ```
-const signal = controller.signal; 
+const signal = controller.signal;
 ```
 
 - Fetching
@@ -53,6 +55,7 @@ function axiosFetch(){
     }).then(res = > console.log(res.data))
 }
 ```
+
 - Abort
 
 ```
@@ -80,11 +83,13 @@ function getUserAccount() {
   return axios.get('/user/12345');
 }
 ```
+
 ```
 function getUserPermissions() {
   return axios.get('/user/12345/permissions');
 }
 ```
+
 ```
 Promise.all([getUserAccount(), getUserPermissions()])
   .then(function (results) {
@@ -107,6 +112,7 @@ axios({
   }
 });
 ```
+
 - GET
 
 ```
@@ -120,11 +126,13 @@ axios({
   });
 
 ```
+
 ```
 axios('/user/12345');
 ```
 
 ## Creating an instance
+
 - instance
 
 ```
@@ -133,14 +141,74 @@ const instance = axios.create({
   timeout: 1000,
 });
 ```
+
 - usage
 
 ```
 instance.get('/longRequest');
 ```
 
+## Axios Interceptors
+
+```
+import axios from "axios";
+```
+
+Config request
+
+```
+axios.interceptors.request.use((config) => {
+    const token = localStorage.getItem("token");sa
+
+    if (token !== null) {
+        config.headers = {
+            "Authorization": `Bearer ${token}`
+        }
+      }
+
+      return config;
+})
+```
+
+Response
+
+```
+axios.interceptors.response.use((response)=>{
+    //status ticker < 200
+    return response;
+},
+function (error) {
+    //status>200
+
+    if (error.response.status === 403) {
+
+    }
+
+    return Promise.reject(error);
+})
+
+```
+
+```
+export const fetchAuthorization = axios
+```
+
+**useage**
+
+```
+import { fetchAuthorization } from "../../../service/fetchAuthorization";
+```
+
+```
+  async function getData() {
+    await fetchAuthorization
+      .get("https://..")
+  }
+```
+
 ## Recommend get API
--  **Async/Await** 
+
+- **Async/Await**
 
 ```
 async function getFact(){
