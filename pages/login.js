@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 
-import { user} from "../assets/username";
+import { user } from "../assets/username";
 import { useRouter } from "next/router";
 import axios from "axios";
-
 
 async function postAPI(url, data) {
   await axios
@@ -36,12 +35,12 @@ function Login() {
     //   expiresIn: 60000,
     // };
     // postAPI(url, data);
-    if(username.includes(user.id) && password.includes(user.password)){
+    if (username.includes(user.id) && password.includes(user.password)) {
       localStorage.setItem("token", `${user.id}_${user.password}_valid`);
       round.push("/");
-      console.log('valid');
-    }else{
-      console.log('fail');
+      console.log("valid");
+    } else {
+      console.log("fail");
     }
   }
 

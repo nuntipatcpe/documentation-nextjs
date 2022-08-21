@@ -201,8 +201,16 @@ export function menuBar() {
           path: "/document/react-get-started",
         },
         {
+          name: "Export",
+          path: "/document/react-export",
+        },
+        {
           name: "JSX",
           path: "/document/react-JSX",
+        },
+        {
+          name: "Css in line",
+          path: "/document/react-css-in-line",
         },
         {
           name: "JSX Dynamic Data",
@@ -225,10 +233,13 @@ export function menuBar() {
           path: "/document/react-props",
         },
         {
+          name: "Props Type",
+          path: "/document/react-props-type",
+        },
+        {
           name: "React Hook",
           path: "/document/react-hook",
         },
-
         {
           name: "useState",
           path: "/document/react-hook-useState",
@@ -240,6 +251,14 @@ export function menuBar() {
         {
           name: "useContext",
           path: "/document/react-hook-useContext",
+        },
+        {
+          name: "useMemo",
+          path: "/document/react-hook-useMemo",
+        },
+        {
+          name: "useCallback",
+          path: "/document/react-hook-useCallback",
         },
         {
           name: "useReducer",
@@ -295,9 +314,31 @@ export function menuBar() {
     {
       id: "Redux",
       subMenu: [
+        // {
+        //   name: "Redux",
+        //   path: "/document/redux",
+        // },
+      ],
+    },
+    //Redux Toolkit
+    {
+      id: "Redux Toolkit",
+      subMenu: [
         {
-          name: "Redux Toolkit",
-          path: "/document/redux-toolkit",
+          name: "Get Started",
+          path: "/document/redux-toolkit-get-started",
+        },
+        {
+          name: "Store",
+          path: "/document/redux-toolkit-store",
+        },
+        {
+          name: "Slices",
+          path: "/document/redux-toolkit-slices",
+        },
+        {
+          name: "Usage",
+          path: "/document/redux-toolkit-usage",
         },
       ],
     },

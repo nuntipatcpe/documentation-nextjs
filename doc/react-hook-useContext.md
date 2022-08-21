@@ -1,41 +1,40 @@
 # useContext
 
-- Component 1
+Parent Component -----> Childent Component
 
-```
-function Component1() {
-  const [user, setUser] = useState("Jesse Hall");
+- TemeContext.js
 
-  return (
-    <>
-      <h1>{`Hello ${user}!`}</h1>
-      <Component2 user={user} />
-    </>
-  );
-}
-```
-- Component 2
+  ```
+  import React from 'react
 
-```
-function Component2({ user }) {
-  return (
-    <>
-      <h1>Component 2</h1>
-      <Component3 user={user} />
-    </>
-  );
-}
-```
-- Component 3
+  const ThemeContext = React.createContext(null);
+  export default ThemeContext
+  ```
 
-```
-function Component3({ user }) {
-  return (
-    <>
-      <h1>Component 3</h1>
-    </>
-  );
-}
+- Parent Component
 
+  ```
+  import ThemeContext from "./ThemeContext"
+  ```
 
-```
+  ```
+      <ThemeContext.Provider value="red">
+          <ChildentComponent>
+      </ThemeContext.Provider>
+  ```
+
+- Childent Component
+
+  ```
+  import ThemeContext from "./ThemeContext"
+  ```
+
+  ```
+  const color = React.useContext(ThemeContext)
+  ```
+
+  ```
+  <div style{{color}}>
+      {color}
+  </div>
+  ```

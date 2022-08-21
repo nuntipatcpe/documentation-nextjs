@@ -1,5 +1,7 @@
 # Install
 
+- Nodejs [install](https://nodejs.org/en/)
+
 - **Vite**
 
 With PNPM
