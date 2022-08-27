@@ -5,8 +5,8 @@ export function menuBar() {
       id: "Vscode",
       subMenu: [
         {
-          name: "Setting Emmet",
-          path: "/document/vscode-setting-emmet",
+          name: "Setting",
+          path: "/document/vscode-setting",
         },
         {
           name: "Extension",
@@ -285,30 +285,29 @@ export function menuBar() {
 
     //NexJs
     {
-      id:'NexJS',
-      subMenu:[
+      id: "NexJS",
+      subMenu: [
         {
-          name:'Get Started',
+          name: "Get Started",
           path: "/document/nextjs-get-started",
         },
         {
-          name:'getServerSideProps',
+          name: "getServerSideProps",
           path: "/document/nextjs-get-Server-Side-Props-ssr",
         },
         {
-          name:'getStaticProps',
+          name: "getStaticProps",
           path: "/document/nextjs-get-started-ssg",
         },
         {
-          name:'getStaticPaths',
+          name: "getStaticPaths",
           path: "/document/nextjs-get-static-paths-dynamic",
         },
         {
-          name:'Client side',
+          name: "Client side",
           path: "/document/nextjs-client-side-csr",
-        }
-
-      ]
+        },
+      ],
     },
     //Redux
     {
