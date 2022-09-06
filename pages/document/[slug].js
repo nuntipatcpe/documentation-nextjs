@@ -1,10 +1,10 @@
-import React ,{useEffect,useState}from "react";
+import React, { useEffect, useState } from "react";
 import matter from "gray-matter";
 import Markdown from "markdown-to-jsx";
 import fs from "fs";
 import Code from "../../component/Code";
 // import { user} from "../assets/username";
-import { user} from "../../assets/username";
+import { user } from "../../assets/username";
 import { useRouter } from "next/router";
 
 //stlye
@@ -39,46 +39,41 @@ function Doc({ content }) {
 
   // // }
   // console.log(router);
-  const {container} = layout();
+  const { container } = layout();
 
   const [valid, setValid] = useState(false);
-  const round =useRouter();
+  const round = useRouter();
 
-  useEffect(()=>{
-    if(localStorage.getItem("token") === `${user.id}_${user.password}_valid` ){
+  useEffect(() => {
+    if (localStorage.getItem("token") === `${user.id}_${user.password}_valid`) {
       setValid(true);
-      console.log(valid);
-    }else{
-      round.push('/login');
+      // console.log(valid);
+    } else {
+      round.push("/login");
     }
-  },[]);
+  }, []);
 
-  if(valid){
+  if (valid) {
     return (
-    <div className={container}>
-      <Markdown
-        className={
-          "prose prose-neutral prose-a:text-blue-700 hover:prose-a:text-blue-500"
-        }
-        options={{
-          overrides: {
-            code: {
-              component: Code,
+      <div className="max-w-[1000px] w-[100vw] p-10 bg-neutral-50 overflow-auto">
+        <Markdown
+          className={
+            "prose prose-neutral prose-a:text-blue-700 hover:prose-a:text-blue-500"
+          }
+          options={{
+            overrides: {
+              code: {
+                component: Code,
+              },
             },
-          },
-        }}
-      >
-        {content}
-      </Markdown>
-    </div>
-  );
+          }}
+        >
+          {content}
+        </Markdown>
+      </div>
+    );
   }
-  return (
-    <div className={container}>
-      
-    </div>
-  )
-  
+  return <div className={container}></div>;
 }
 
 export default Doc;

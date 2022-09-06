@@ -16,7 +16,7 @@ function aside() {
 
   const mobileClinck = (name) => {
     setActive(name);
-    setToggle(!toggle);
+    setToggle(false);
   };
   return (
     <div
@@ -25,7 +25,6 @@ function aside() {
           ? "left-0 overflow-auto bg-neutral-900 "
           : "max-w-[30px] sm:max-w-[280px] sm:overflow-auto sm:bg-neutral-900"
       }`}
-      a
     >
       <div
         className={`i-menu fixed top-10  p-2 z-[1000] sm:hidden ${

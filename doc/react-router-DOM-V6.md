@@ -73,6 +73,7 @@ Path other
 ```
 import { Link } from "react-router-dom";
 ```
+
 ```
 <Link to="/pathname"> </Link>
 ```
@@ -92,6 +93,15 @@ function(e){
 }
 ```
 
+```
+function(e){
+    let navigate = useNavigate();
+    if(e){
+        navigate.(-1);
+    }
+}
+```
+
 ## Reading URL Parameters
 
 - Set Route **:id**
@@ -100,19 +110,42 @@ function(e){
 <Route path='/Products/:id' element={<Products/>} />
 ```
 
-- Usage **{id}**
+- useParams
 
-```
-import{useParams} from 'react-router-dom'
-```
+  ```
+  import{useParams} from 'react-router-dom'
+  ```
 
-```
-const {id} = useParams();
-```
+  ```
+  const {id} = useParams();
+  ```
+
+- useMatch **check URL /:id**
+
+  ```
+  import { useMatch } from "react-router-dom";
+  ```
+
+  :id
+
+  ```
+  const match = useMatch("/stock/edit/:id");
+  ```
+
+  id
+
+  ```
+  match.params.id
+  ```
+
+- history
+  ```
+  history.back();
+  ```
 
 ## Not Found Routes
 
-set path =**" * "**
+set path =**" \* "**
 
 ```
  <Route path="*" element={<NotFound />} />

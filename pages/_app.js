@@ -12,9 +12,11 @@ function MyApp({ Component, pageProps }) {
         <title>Documentation</title>
       </Head>
       <Navbar />
-      <div className="flex justify-center mt-10 bg-neutral-900">
+      <div className="flex mt-10">
         <Aside />
-        <Component {...pageProps} />
+        <div className="mx-auto">
+          <Component {...pageProps} />
+        </div>
       </div>
     </>
   );

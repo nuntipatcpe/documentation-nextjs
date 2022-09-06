@@ -14,6 +14,15 @@ export function menuBar() {
         },
       ],
     },
+    {
+      id: "Folder Structure",
+      subMenu: [
+        {
+          name: "Vite React",
+          path: "/document/folder-structure-vite-react",
+        },
+      ],
+    },
     //Git
     {
       id: "Git",
