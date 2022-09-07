@@ -57,4 +57,13 @@ code --install-extension glenn2223.live-sass
 code --install-extension humao.rest-client
 code --install-extension alexcvzz.vscode-sqlite
 code --install-extension qwtel.sqlite-viewer
+
+```
+
+## Golang
+
+- go
+
+```
+code --install-extension golang.go
 ```

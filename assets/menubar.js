@@ -394,6 +394,15 @@ export function menuBar() {
         },
       ],
     },
+    {
+      id: "Golang",
+      subMenu: [
+        {
+          name: "Get Started",
+          path: "/document/golang-get-started",
+        },
+      ],
+    },
     //Function javascript
     {
       id: "Function javascript",
