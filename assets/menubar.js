@@ -23,6 +23,24 @@ export function menuBar() {
         },
       ],
     },
+    //Windows tool
+    {
+      id: "Windows tool",
+      subMenu: [
+        {
+          name: "Dev Tool",
+          path: "/document/windows-dev-tool",
+        },
+        {
+          name: "Program",
+          path: "/document/windows-program",
+        },
+        {
+          name: "Driver",
+          path: "/document/windows-driver",
+        },
+      ],
+    },
     //Git
     {
       id: "Git",
@@ -401,6 +419,14 @@ export function menuBar() {
           name: "Get Started",
           path: "/document/golang-get-started",
         },
+        {
+          name: "Gin",
+          path: "/document/golang-gin-framework",
+        },
+        {
+          name: "GORM",
+          path: "/document/golang-GORM",
+        },
       ],
     },
     //Function javascript
@@ -410,24 +436,6 @@ export function menuBar() {
         {
           name: "Comma number",
           path: "/document/function-javascript-comma-number",
-        },
-      ],
-    },
-    //Windows tool
-    {
-      id: "Windows tool",
-      subMenu: [
-        {
-          name: "Dev Tool",
-          path: "/document/windows-dev-tool",
-        },
-        {
-          name: "Program",
-          path: "/document/windows-program",
-        },
-        {
-          name: "Driver",
-          path: "/document/windows-driver",
         },
       ],
     },

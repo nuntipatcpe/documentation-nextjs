@@ -1,10 +1,20 @@
-# tool
+# Get started
 
 Golang [Downloads](https://go.dev/dl/)
 
 ```
 go version
 ```
+
+Go mod [libery](https://pkg.go.dev/std)
+
+```
+go mod init name
+```
+
+---
+
+## Run and build
 
 run
 
@@ -18,28 +28,24 @@ execution file
 go build ./file
 ```
 
-window
+---
 
-node mon
+## Automatically restarting
 
-```
-npm i -g nodemon
-```
+- window
 
-```
-nodemon --exec go run .\index.go
-```
+  node mon
 
-mac
+  ```
+  npm i -g nodemon
+  ```
 
-```
-npx go-mon name.go
-```
+  ```
+  nodemon --exec go run .\index.go
+  ```
 
-packages [libery](https://pkg.go.dev/std)
+- mac
 
-Go mod
-
-```
-go mod init name
-```
+  ```
+  npx go-mon name.go
+  ```
