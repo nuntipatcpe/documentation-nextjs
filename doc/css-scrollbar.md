@@ -1,30 +1,17 @@
 # Scrollbar custom
-- scroll bar styles
 
 ```
 ::-webkit-scrollbar {
-    width: 0.8rem;
-    height: 0.8rem;
+  width: 10px;
+  height: 10px;
 }
-```
-- Background bar
-
-```
 ::-webkit-scrollbar-track {
-      background: #f1f1f1;
+  background: color.$color-2;
 }
-```
-- Bar
-
-```
 ::-webkit-scrollbar-thumb {
-      background: #888;
+  background-color: rgba(color.$color-4, 0.8);
 }
-```
-- Hover
-
-```
-::-webkit-scrollbar-thumb {
-      background: #888;
+::-webkit-scrollbar-thumb:hover {
+  background: color.$color-4;
 }
 ```
