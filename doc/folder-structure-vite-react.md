@@ -23,7 +23,7 @@ cd ../../..
 Pages
 
 ```
-cd src/components/layouts
+cd src/components/pages
 npx crcf -f --notest --nocss --typescript Home Login Register
 cd ../../..
 ```
