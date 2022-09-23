@@ -13,6 +13,7 @@ function Code({ children, language }) {
       setCopyAc("");
     }, 1000);
   };
+  console.log(language);
 
   return (
     <>
@@ -20,7 +21,7 @@ function Code({ children, language }) {
         <CopyToClipboard text={children} onCopy={() => setTextCoppy(true)}>
           <FaCopy className={copyAc ? "Icon-active" : "Icon"} />
         </CopyToClipboard>
-        <PrismLight language={language} style={a11yDark} className={"a"}>
+        <PrismLight language={language === undefined? "jsx":language} style={a11yDark} >
           {children}
         </PrismLight>
       </div>

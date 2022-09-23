@@ -5,24 +5,26 @@
 
 **Array**
 
-```
+<code language="jsx">
 const data =[100,200,300,400,500]
 const result = data.map((e,i) =>{
     return i ;
 })
 console.log(result)
-```
+</code>
 
-```
+<code language="jsx">
 const data =[100,200,300,400,500]
 const result = data.map(e=>{
     const a = e*2;
     return a ;
 })
 console.log(result)
-```
+</code>
+
 
 **Object**
+
 
 ```
 const data = [
@@ -44,5 +46,4 @@ const obj = data.map((e,i)=>{
     return `dat -> ${e.day}+ test -> ${e.test}`
 })
 console.log(obj)
-
 ```

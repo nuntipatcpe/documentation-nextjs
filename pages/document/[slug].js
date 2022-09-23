@@ -51,7 +51,7 @@ function Doc({ content }) {
       <div className="max-w-[1000px] w-[100vw] p-10 bg-neutral-50 overflow-auto">
         <Markdown
           className={
-            "prose prose-neutral prose-a:text-blue-700 hover:prose-a:text-blue-500"
+            "prose prose-neutral prose-a:text-blue-700 hover:prose-a:text-blue-500 prose-pre:bg-transparent"
           }
           options={{
             overrides: {

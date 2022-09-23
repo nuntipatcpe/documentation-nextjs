@@ -1,16 +1,17 @@
 # Spread Operator
 - **...** Variable Array
 
-```
+<code language="jsx">
 const newArr = [100,200,300];
-const data = [10,20,...newArr];
+const data = [...newArr,10,20];
 console.log(data);
-```
+</code>
+
 - variableArr.**push(...newArr)**;
 
-```
+<code language="jsx">
 const newArr = [100,200,300];
 const data = [10,20];
 data.push(...newArr);
 console.log(data);
-```
+</code>

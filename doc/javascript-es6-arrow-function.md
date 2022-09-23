@@ -1,20 +1,17 @@
 # Arrow Function
 - Original Function
+    <code language="jsx">
+    function originalName(p,p1){
+        return p+p1;
+    }</code>
 
-```
-function originalName(p,p1){
-    return p+p1;
-}
-```
 - Arrow Function **Recommend**
+    <code language="jsx">
+    originalName = (p,p1)=>{
+        return p+p1; 
+    }</code>
 
-```
-originalName = (p,p1)=>{
-    return p+p1; 
-}
-```
-or
-
-```
-originalName = (p,p1)=> p+p1 
-```
+    or
+    <code language="jsx">
+    originalName = (p,p1) => p+p1 
+    </code>

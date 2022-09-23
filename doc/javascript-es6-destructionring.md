@@ -5,38 +5,37 @@
 - const blue = colors[1]
 
 - const black = colors[2]
+    <code language="jsx">
+    const colors = ["red","blue", "black"];
+    const red = colors[0]
+    const blue = colors[1]
+    const black = colors[2]
+    </code>
 
-```
-const colors = ["red","blue", "black"];
-const red = colors[0]
-const blue = colors[1]
-const black = colors[2]
-```
 ---
 
 ## Recommend
 
 - const [red,blue,black] = colors
+    <code language="jsx">
+    const colors = ["red","blue", "black"];
+    const [red,blue,black] = colors
+    console.log(red)
+    console.log(blue)
+    console.log(black)
+    </code>
 
-```
-const colors = ["red","blue", "black"];
-const [red,blue,black] = colors
-console.log(red)
-console.log(blue)
-console.log(black)
-```
 - const [,,black] = colors
+    <code language="jsx">
+    const colors = ["red","blue", "black"];
+    const [,,black] = colors
+    console.log(black)
+    </code>
 
-```
-const colors = ["red","blue", "black"];
-const [,,black] = colors
-console.log(black)
-
-```
 ---
 
 ## Object
-```
+<code language="jsx">
 const product ={
     proName: "Com",
     price: 2000,
@@ -52,10 +51,12 @@ const {
 console.log(n);
 console.log(p);
 console.log(s);
-```
+</code>
+
 - create same variable name **Recommend**
 
-```
+
+<code language="jsx">
 const product ={
     proName : "Com",
     price : 2000,
@@ -71,11 +72,12 @@ const {
 console.log(proName);
 console.log(price);
 console.log(stock);
-```
+</code>
+
 
 - may not pull obj all
 
-```
+<code language="jsx">
 const product ={
     proName : "Com",
     price : 2000,
@@ -89,4 +91,4 @@ const {
 
 console.log(proName);
 console.log(stock);
-```
+</code>
