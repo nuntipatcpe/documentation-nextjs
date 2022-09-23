@@ -1,39 +1,38 @@
 # Branch
+
 - Check branch
+  <code language="jsx">
+  git branch
+  </code>
 
-```
-git branch
-```
 - Change name branch
+  <code language="jsx">
+  git branch -M main
+  </code>
 
-```
-git branch -M main 
-```
 - Create branch
+  <code language="jsx">
+  git branch -c new_branch
+  </code>
 
-```
-git branch -c new_branch 
-```
 - Delete
-
-```
-git branch -d newBranch 
-```
+  <code language="jsx">
+  git branch -d newBranch
+  </code>
 
 - Force delete
+  <code language="jsx">
+  git branch -D newBranch
+  </code>
 
-```
-git branch -D newBranch 
-```
 ## Switch branch
 
 - switch and create new branch "-c"
+  <code language="jsx">
+  git switch -c <non_existing_branch>
+  </code>
 
-```
-git switch -c <non_existing_branch>
-```
 - switch and create new branch "-c"
-
-```
-git switch -c <non_existing_branch>
-```
+  <code language="jsx">
+  git switch -c <non_existing_branch>
+  </code>

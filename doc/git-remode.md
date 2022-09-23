@@ -1,9 +1,10 @@
 # Check remode git
 
-```
-git remote -v
-```
-
-```
-git remote remove heroku
-```
+- check remote
+  <code language="jsx">
+  git remote -v
+  </code>
+- remove heroku
+  <code language="jsx">
+  git remote remove heroku
+  </code>

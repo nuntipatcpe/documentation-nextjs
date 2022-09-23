@@ -1,28 +1,32 @@
 # ADD File
+
 - Install git and add to git staging area
+  <code language="jsx">
+  git init
+  git add .
+  </code>
 
-```
-git init
-git add .
-```
-- check status 
+- check status
+  <code language="jsx">
+  git status
+  </code>
 
-```
-git status
-```
 - Commit and change name main branch
+  <code language="jsx">
+  git commit -m "first commit"
+  git branch -M main
+  </code>
+  <code language="jsx">
+  git remote add origin https:\/\/github.com/..
+  </code>
+  <code language="jsx">
+  git push -u origin main
+  </code>
 
-```
-git commit -m "first commit"
-git branch -M main
-```
-```
-git remote add origin  https://github.com/...
-```
-```
-git push -u origin main
-```
+---
+
 # Clone
-```
-git clone https://github.com/...
-```
+
+<code language="jsx">
+git clone https:\/\/github.com/..
+</code>
