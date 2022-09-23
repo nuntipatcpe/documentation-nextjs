@@ -1,10 +1,7 @@
 # Link in page
-
-```
-<a href="#id"></a>
-```
-```
-html{
-    scroll-behavior: smooth;
-}
-```
+  <code language="css">
+    &lt;a href="#id">&lt;/a></code>
+  <code language="css">
+    html{
+        scroll-behavior: smooth;
+    }</code>

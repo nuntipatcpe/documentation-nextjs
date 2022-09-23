@@ -96,60 +96,12 @@ export function menuBar() {
           path: "/document/css-fonts",
         },
         {
-          name: "Colors",
-          path: "/document/css-colors",
-        },
-        {
-          name: "Text Decoration",
-          path: "/document/css-text-decoration",
-        },
-        {
-          name: "Text Align",
-          path: "/document/css-text-align",
-        },
-        {
-          name: "Border",
-          path: "/document/css-border",
-        },
-        {
-          name: "Margin and Padding",
-          path: "/document/css-margin-padding",
-        },
-        {
-          name: "Background",
-          path: "/document/css-background",
-        },
-        {
-          name: "Float and Clear",
-          path: "/document/css-float-clear",
-        },
-        {
           name: "Link",
           path: "/document/css-link",
         },
         {
-          name: "Position",
-          path: "/document/css-position",
-        },
-        {
-          name: "Layer",
-          path: "/document/css-layer",
-        },
-        {
           name: "Link in page smooth",
           path: "/document/css-Link-page-smooth",
-        },
-        {
-          name: "Overflow",
-          path: "/document/css-overflow",
-        },
-        {
-          name: "Cursor Stype",
-          path: "/document/css-cursor-stype",
-        },
-        {
-          name: "Box-shadow",
-          path: "/document/css-box-shadow",
         },
         {
           name: "Media Query",

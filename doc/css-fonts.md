@@ -1,16 +1,12 @@
 # Fonts
 
  [Google Fonts](https://fonts.google.com/)
- - Import in file **style.css**
 
- ```
- @import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
- ```
+- Montserrat
+    <code language="css">
+    @import url('https:\/\/fonts.googleapis.com\/css2?family=Lorafamily=Montserrat&display=swap');
+    </code>
+    <code language="css">
+    font-family:'Montserrat', sans-serif;
+    </code>
 
- - usage
-
- ```
- *{
-    font-family: 'Kdam Thmor Pro', sans-serif;
-}
- ```
