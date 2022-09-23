@@ -14,24 +14,52 @@ npm install --save-dev create-react-component-folder
 
 Layouts
 
+- no css
+
 ```
 cd src/components/layouts
 npx crcf -f --notest --nocss --typescript Aside Header Footer
 cd ../../..
 ```
 
-Pages
+- css
 
 ```
-cd src/components/pages
-npx crcf -f --notest --nocss --typescript Home Login Register
+cd src/components/layouts
+npx crcf -f --notest  --typescript Aside Header Footer
 cd ../../..
 ```
 
-<!-- <pre>
-<code>
-<span className="red" id="red">Lorem</span><span className="yellow">ipsumynameisDonald</span>
-<br/>
-<span className="red" id="red">Loremipsum</span>
-</code>
-</pre>
+- sass
+
+```
+cd src/components/layouts
+npx crcf -f -s --notest  --typescript Aside Header Footer
+cd ../../..
+```
+
+Pages
+
+- no css
+
+```
+cd src/components/pages
+npx crcf -f --notest --nocss --typescript Aside Header Footer
+cd ../../..
+```
+
+- css
+
+```
+cd src/components/pages
+npx crcf -f --notest  --typescript Aside Header Footer
+cd ../../..
+```
+
+- sass
+
+```
+cd src/components/pages
+npx crcf -f -s --notest  --typescript Aside Header Footer
+cd ../../..
+```

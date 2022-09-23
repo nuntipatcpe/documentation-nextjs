@@ -1,9 +1,18 @@
-# style.scss
+# Style.scss
 
 - Sass
 
+  - Split file Sass
+
   ```
   mkdir -p src/sass/base,src/sass/components,src/sass/layout,src/sass/pages,src/sass/utils
+  New-Item -p src/sass/main.scss
+  ```
+
+  - Not split files
+
+  ```
+  mkdir -p src/sass/base,src/sass/utils
   New-Item -p src/sass/main.scss
   ```
 

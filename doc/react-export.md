@@ -15,9 +15,9 @@
   import { user } from './path';
   ```
 
---- 
+---
 
-- **export Default** 
+- **export Default**
 
   ```
   import React from 'react'
@@ -29,7 +29,7 @@
   export default App;
   ```
 
-- Usage  **App**
+- Usage **App**
 
   ```
   import App from './path';

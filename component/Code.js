@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import { FaCopy } from "react-icons/fa";
+
 function Code({ children, language }) {
   const [copyAc, setCopyAc] = useState(false);
   const setTextCoppy = (e) => {

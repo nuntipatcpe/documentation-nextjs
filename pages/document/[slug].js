@@ -34,20 +34,13 @@ export async function getStaticProps({ params: { slug } }) {
 }
 
 function Doc({ content }) {
-  // const router = useRouter();
-  // // if(router.fallback){
-
-  // // }
-  // console.log(router);
   const { container } = layout();
-
   const [valid, setValid] = useState(false);
   const round = useRouter();
 
   useEffect(() => {
     if (localStorage.getItem("token") === `${user.id}_${user.password}_valid`) {
       setValid(true);
-      // console.log(valid);
     } else {
       round.push("/login");
     }
