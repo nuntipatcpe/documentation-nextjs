@@ -1,9 +1,10 @@
 # Merge
-```
-git merge name_branch
-```
-- Force merge
 
-```
-git merge name_branch -f
-```
+  <code language="jsx">
+  git merge name_branch
+  </code>
+
+- Force merge
+  <code language="jsx">
+  git merge name_branch -f
+  </code>
