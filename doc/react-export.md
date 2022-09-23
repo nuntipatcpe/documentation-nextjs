@@ -2,7 +2,7 @@
 
 - **export**
 
-  <code language="jsx">
+  <code language="javascript">
   export let user = {
     id: "boom",
     password: "1234",
@@ -11,7 +11,7 @@
 
 - Useage **{ user }**
 
-  <code language="jsx">
+  <code language="javascript">
   import { user } from './path';
   </code>
 
@@ -19,7 +19,7 @@
 
 - **export Default**
 
-  <code language="jsx">
+  <code language="javascript">
   import React from 'react'
   function App() {
     return (
@@ -31,6 +31,6 @@
 
 - Usage **App**
 
-  <code language="jsx">
+  <code language="javascript">
   import App from './path';
   </code>

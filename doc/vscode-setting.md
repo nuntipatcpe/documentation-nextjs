@@ -6,14 +6,14 @@
    - Mac **Command+Shift+P**
 
 - Configuration in settings.json
-  <code language="jsx">
+  <code language="javascript">
   user settings (JSON)
   </code>
 
 ## Setting
 
 - emmet
-  <code language="jsx">
+  <code language="javascript">
   {
   "emmet.syntaxProfiles": {
   "javascript": "jsx"
@@ -26,25 +26,25 @@
   </code>
 
 - Bracket Pairs
-  <code language="jsx">
+  <code language="javascript">
   "editor.guides.bracketPairs": "active",
   "editor.guides.bracketPairsHorizontal": "active",
   </code>
 
 - format on Save
-  <code language="jsx">
+  <code language="javascript">
   "editor.formatOnSave": true
   </code>
 
 - Compact Folders
-  <code language="jsx">
+  <code language="javascript">
   "explorer.compactFolders": false
   </code>
 
 ## Main
 
 - settings.json
-  <code language="jsx">
+  <code language="javascript">
   {
   "emmet.syntaxProfiles": {
   "javascript": "jsx"

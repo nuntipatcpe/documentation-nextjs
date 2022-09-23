@@ -23,7 +23,6 @@ function Login() {
   useEffect(() => {
     // You now have access to `window`
     setToken(localStorage.getItem("token"));
-    console.log(token);
   }, []);
 
   function handleSubmit(e) {

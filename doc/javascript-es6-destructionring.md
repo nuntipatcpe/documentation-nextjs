@@ -5,7 +5,7 @@
 - const blue = colors[1]
 
 - const black = colors[2]
-    <code language="jsx">
+    <code language="javascript">
     const colors = ["red","blue", "black"];
     const red = colors[0]
     const blue = colors[1]
@@ -17,7 +17,7 @@
 ## Recommend
 
 - const [red,blue,black] = colors
-    <code language="jsx">
+    <code language="javascript">
     const colors = ["red","blue", "black"];
     const [red,blue,black] = colors
     console.log(red)
@@ -26,7 +26,7 @@
     </code>
 
 - const [,,black] = colors
-    <code language="jsx">
+    <code language="javascript">
     const colors = ["red","blue", "black"];
     const [,,black] = colors
     console.log(black)
@@ -35,7 +35,7 @@
 ---
 
 ## Object
-<code language="jsx">
+<code language="javascript">
 const product ={
     proName: "Com",
     price: 2000,
@@ -56,7 +56,7 @@ console.log(s);
 - create same variable name **Recommend**
 
 
-<code language="jsx">
+<code language="javascript">
 const product ={
     proName : "Com",
     price : 2000,
@@ -77,7 +77,7 @@ console.log(stock);
 
 - may not pull obj all
 
-<code language="jsx">
+<code language="javascript">
 const product ={
     proName : "Com",
     price : 2000,

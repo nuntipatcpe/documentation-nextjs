@@ -1,5 +1,5 @@
 # Fetch
 
-<code language="jsx">
+<code language="javascript">
 git fetch
 </code>

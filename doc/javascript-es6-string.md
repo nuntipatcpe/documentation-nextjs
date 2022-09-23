@@ -4,7 +4,7 @@ MultiLine String
 
 example
 
-<code language="jsx">
+<code language="javascript">
 const id = \`Lorem ipsum dolor
 , sit amet consectetur 
 adipisicing elit. Reiciendis 
@@ -18,7 +18,7 @@ console.log(id)
 Interpolation
 - \`${**variable**}\`
 
-<code language="jsx">
+<code language="javascript">
 const email = "nuntipatcpe@gmail.com";
 console.log(\`Email ${name} = ${email}\`)
 </code>

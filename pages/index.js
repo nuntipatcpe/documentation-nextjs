@@ -16,7 +16,6 @@ export default function Home() {
   useEffect(() => {
     if (localStorage.getItem("token") === `${user.id}_${user.password}_valid`) {
       setValid(true);
-      console.log(valid);
     } else {
       round.push("/login");
     }

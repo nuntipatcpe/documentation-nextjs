@@ -1,7 +1,7 @@
 # Rest Parameter
 - **(...numberArr)**
 
-<code language="jsx">
+<code language="javascript">
 sunmation = (...numberArr) =>{
     let total = 0;
     for(let number of numberArr){

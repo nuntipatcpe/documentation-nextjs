@@ -10,7 +10,7 @@
 - Prettier code formatter
 - Vscode icons
 
-    <code language="jsx">
+    <code language="javascript">
     code --install-extension formulahendry.auto-rename-tag
     code --install-extension mcright.auto-save
     code --install-extension naumovs.color-highlight
@@ -23,7 +23,7 @@
 ## Code Runner
 
 Run code snippet or code file for multiple languages
-<code language="jsx">
+<code language="javascript">
 code --install-extension formulahendry.code-runner
 </code>
 
@@ -32,7 +32,7 @@ code --install-extension formulahendry.code-runner
 - ES7+ React/Redux/React-Native snippets
 
 - html to JSX
-  <code language="jsx">
+  <code language="javascript">
   code --install-extension dsznajder.es7-react-js-snippets
   code --install-extension riazxrazor.html-to-jsx
   </code>
@@ -40,7 +40,7 @@ code --install-extension formulahendry.code-runner
 ## Sass
 
 - Live sass compiler
-  <code language="jsx">
+  <code language="javascript">
   code --install-extension glenn2223.live-sass
   </code>
 
@@ -49,7 +49,7 @@ code --install-extension formulahendry.code-runner
 - REST Client
 - SQLite
 - SQLite Viewer
-  <code language="jsx">
+  <code language="javascript">
   code --install-extension humao.rest-client
   code --install-extension alexcvzz.vscode-sqlite
   code --install-extension qwtel.sqlite-viewer
@@ -58,6 +58,6 @@ code --install-extension formulahendry.code-runner
 ## Golang
 
 - go
-  <code language="jsx">
+  <code language="javascript">
   code --install-extension golang.go
   </code>

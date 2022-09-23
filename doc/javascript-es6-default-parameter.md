@@ -1,6 +1,6 @@
 # Default Parameter
 
-<code language="jsx">
+<code language="javascript">
 getData = (p,p2="a") =>{
     const address = \`test ${p2}\`
     return address+p;

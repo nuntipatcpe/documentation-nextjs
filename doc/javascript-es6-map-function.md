@@ -5,7 +5,7 @@
 
 **Array**
 
-<code language="jsx">
+<code language="javascript">
 const data =[100,200,300,400,500]
 const result = data.map((e,i) =>{
     return i ;
@@ -13,7 +13,7 @@ const result = data.map((e,i) =>{
 console.log(result)
 </code>
 
-<code language="jsx">
+<code language="javascript">
 const data =[100,200,300,400,500]
 const result = data.map(e=>{
     const a = e*2;

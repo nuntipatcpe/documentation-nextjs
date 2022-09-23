@@ -21,7 +21,7 @@ function Code({ children, language }) {
         <CopyToClipboard text={children} onCopy={() => setTextCoppy(true)}>
           <FaCopy className={copyAc ? "Icon-active" : "Icon"} />
         </CopyToClipboard>
-        <PrismLight language={language === undefined? "jsx":language} style={a11yDark} >
+        <PrismLight language={language === undefined ? "javascript":language} style={a11yDark} >
           {children}
         </PrismLight>
       </div>

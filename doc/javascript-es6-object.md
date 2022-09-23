@@ -1,6 +1,6 @@
 # Object
 
-<code language="jsx">
+<code language="javascript">
 const customer = {
     id : "123",
     email : "nuntipatcpe@gmail.com",
@@ -10,7 +10,7 @@ console.log(customer);
 </code>
 
 - same variable name
-    <code language="jsx">
+    <code language="javascript">
     const email = "nuntipatcpe@gmail.com";
     const id = "123";
     const userName = "boom";
@@ -22,7 +22,7 @@ console.log(customer);
     console.log(customer);</code>
 
 - can set method
-    <code language="jsx">
+    <code language="javascript">
     const email = "nuntipatcpe@gmail.com";
     const customer = {
         id : "123",
