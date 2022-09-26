@@ -40,20 +40,20 @@ Pages
 - no css
   <code language="javascript">
   cd src/components/pages
-  npx crcf -f --notest --nocss --typescript Aside Header Footer
+  npx crcf -f --notest --nocss --typescript Home
   cd ../../..
   </code>
 
 - css
   <code language="javascript">
   cd src/components/pages
-  npx crcf -f --notest --typescript Aside Header Footer
+  npx crcf -f --notest --typescript Home
   cd ../../..
   </code>
 
 - sass
   <code language="javascript">
   cd src/components/pages
-  npx crcf -f -s --notest --typescript Aside Header Footer
+  npx crcf -f -s --notest --typescript Home
   cd ../../..
   </code>

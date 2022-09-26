@@ -1,5 +1,26 @@
-# Reste css
+# Reset css
 
+## reset
+
+<code language="css">
+@import url('https:\/\/fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  font-size: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: black;
+}</code>
+
+## Reset all
 - font-family:**Montserrat**
   <code language="css">
   @import url('https:\/\/fonts.googleapis.com/css2?family=Lora&family=Montserrat&display=swap');
@@ -55,3 +76,5 @@
   </code>
 
 [link](https://meyerweb.com/eric/tools/css/reset/)
+
+
