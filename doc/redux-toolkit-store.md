@@ -5,28 +5,34 @@
 
   ```
   import { configureStore } from "@reduxjs/toolkit";
-  ```
-
-  ```
   import { useDispatch } from "react-redux";
-  ```
-  ```
-    import sliceReducer from "./slices/slice";
-  ``` 
 
-    ```
-    const reducer = {
-        sliceReducer
-    }
-    ```
+  import sliceReducer from "./slices/sliceDemo.slice";
 
-  **devTools** redux-logger Mode dev
+  const reducer = {
+    sliceReducer
+  };
+
+  export const store = configureStore({
+    reducer,
+  });
+
+  export type RootState = ReturnType<typeof store.getState>;
+  export type AppDispatch = typeof store.dispatch;
+  export const useAppDispatch = () => useDispatch<AppDispatch>();
+
+  ```
+
+  **DevTools** redux-logger Mode dev
 
     ```
     export const store = configureStore({
-        reducer
+      reducer,
+    devTools
     });
     ```
+
+    Create type useDispatch
 
     ```
     export type RootState = ReturnType<typeof store.getState>;

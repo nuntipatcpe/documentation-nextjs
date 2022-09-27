@@ -4,65 +4,40 @@
 
   ```
   import { store } from "./store/store";
-  ```
-
-  ```
   import { Provider } from "react-redux";
   ```
 
   ```
   <Provider store={store}>
-      <App />
+    <App />
   </Provider>
   ```
-
 - Component.tsx
 
+  - getValueState
+
   ```
-  import { useSelector } from "react-redux";
+  import {
+    demoAction,
+    setAsynchronousDemo,
+    sliceSelector,
+  } from "../../../store/slices/login.slice";
+  ``` 
+  ```
+  let reducer = useSelector(sliceSelector);
   ```
 
   ```
-  import { sliceSelector, count, setCountAsync } from "./store/slices/slice";
+  {reducer.valueTest}
   ```
 
-  ```
-  import { useAppDispatch } from "./store/store";
-  ```
-
-  Get Variable in State
+  - dispatch
 
   ```
-  const reducer = useSelector(sliceSelector);
+  let dispatch = useAppDispatch();
   ```
-
-  Dispatch can use action in my slice
-
   ```
-  const dispatch = useAppDispatch();
+  dispatch(demoAction("demoTest"));
+  dispatch(setAsynchronousDemo(1));
   ```
-
-  ```
-  return (
-  <div>
-    <h1>Asynchronous {reducer.number}</h1>
-    <h1>Asynchronous {reducer.AsyncNumber}</h1>
-    <button
-        onClick={() => {
-            dispatch(count(1));
-            dispatch(setCountAsync(1));
-        }}
-        >
-    Increase
-    </button>
-    <button
-        onClick={() => {
-            dispatch(count(-1));
-            dispatch(setCountAsync(-1));
-        }}
-        >
-    Increase
-    </button>
-  </div>
-  )
-  ```
+  

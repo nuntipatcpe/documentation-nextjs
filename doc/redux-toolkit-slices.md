@@ -2,62 +2,97 @@
 
 - Synchronous
 
-  ```
-  const slice = createSlice({
-  name: "counter1",
+```
+import {  createSlice } from "@reduxjs/toolkit";
+import { RootState } from "../store";
+
+type initialStateType = {
+  valueTest: string;
+};
+const initialValues: initialStateType = {
+  valueTest: "sliceDemo",
+};
+
+
+const sliceDemo = createSlice({
+  name: "sliceDemo",
   initialState: initialValues,
 
   reducers: {
-    //action_Synchronous
+    demoAction: (state: initialStateType, actions) => {
+      console.log(state.valueTest);
+      state.valueTest = "123";
+    },
   },
 
-  });
-  ```
+});
+
+export const { demoAction } = sliceDemo.actions;
+export const sliceSelector = (store: RootState) => store.sliceReducer;
+export default sliceDemo.reducer;
+```
 
 - Asynchronous
 
-  Action Asynchronous
+```
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import { RootState } from "../store";
 
-  ```
-  export const setCountAsync = createAsyncThunk(
-  "counter1/setValueAsync",
+type initialStateType = {
+  valueTest: string;
+};
+const initialValues: initialStateType = {
+  valueTest: "sliceDemo",
+};
+
+export const setAsynchronousDemo = createAsyncThunk(
+  "slice/setAsynchronousDemo",
   async (value: number) => {
-
     //action_Asynchronous
     return value;
   }
-  );
-  ```
+);
 
-  Effect by Asynchronous
-
-  ```
-  const slice = createSlice({
-  name: "counter1",
+const sliceDemo = createSlice({
+  name: "sliceDemo",
   initialState: initialValues,
 
+  reducers: {
+    demoAction: (state: initialStateType, actions) => {
+      console.log(state.valueTest);
+      state.valueTest = "123";
+    },
+  },
   extraReducers: (builder) => {
-
     //Effect by action_Asynchronous
 
     builder.addCase(
-      setCountAsync.fulfilled,
-      (state: initialStateType, actions: PayloadAction) => {
+      setAsynchronousDemo.fulfilled,
+      (state: initialStateType, actions) => {
         // success
       }
     );
 
     builder.addCase(
-      setCountAsync.pending,
-      (state: initialStateType, actions: PayloadAction) => {
-        state.loading = true;
+      setAsynchronousDemo.pending,
+      (state: initialStateType, actions) => {
         // pending
       }
     );
-  },
-  });
 
-  ```
+    builder.addCase(
+      setAsynchronousDemo.rejected,
+      (state: initialStateType, actions) => {
+        //error
+      }
+    );
+  },
+});
+
+export const { demoAction } = sliceDemo.actions;
+export const sliceSelector = (store: RootState) => store.sliceReducer;
+export default sliceDemo.reducer;
+```
 
 ## Example
 
@@ -70,10 +105,10 @@
 3. Type PayloadAction
 
 
-    ```
-    import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
-    import { RootState } from "../store";
-    ```
+```
+import { createAsyncThunk, createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { RootState } from "../store";
+```
 
 ---
 

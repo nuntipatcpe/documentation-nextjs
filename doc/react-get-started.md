@@ -2,84 +2,111 @@
 
 - Nodejs [install](https://nodejs.org/en/)
 
-- **Vite**
+---
 
-With PNPM
+# Vite
 
-```
-pnpm create vite
-```
+- Typescript
 
-With NPM
+  ```
+  pnpm create vite my-react-app --template react-ts
+  ```
 
-```
-npm create vite@latest
-```
+### Deploy
 
-With Yarn
+- Heroku
 
-```
-yarn create vite
-```
+  1. Install [Heroku CLI.](https://devcenter.heroku.com/articles/heroku-cli)
+  2. Create a Heroku account by [signing up.](https://signup.heroku.com)
+  3. Run **heroku** login and fill in your Heroku credentials:
 
-- **Deploy**
+  ```
+  heroku login
 
-Heroku
+  ```
 
-1. Install [Heroku CLI.](https://devcenter.heroku.com/articles/heroku-cli)
-2. Create a Heroku account by [signing up.](https://signup.heroku.com)
-3. Run **heroku** login and fill in your Heroku credentials:
+  4. static.json
 
-```
-heroku login
+  ```
+  {
+    "root": "./dist"
+  }
+  ```
 
-```
+  5. Set up your Heroku git remote
 
-4. Create a file **static.json**
+  ```
+  git init
+  ```
 
-```
-{
-  "root": "./dist"
-}
-```
+  ```
+  git add .
+  ```
 
-5. Set up your Heroku git remote
+  ```
+  git commit -m "My site ready for deployment."
+  ```
 
-```
-git init
-```
+  ```
+  heroku apps:create example
+  ```
 
-```
-git add .
-```
+  6. Set buildpacks. We use heroku/nodejs to build the project and heroku-buildpack-static to serve it.
 
-```
-git commit -m "My site ready for deployment."
-```
+  ```
+  heroku buildpacks:set heroku/nodejs
+  ```
 
-```
-heroku apps:create example
-```
+  ```
+  heroku buildpacks:add https://github.com/heroku/heroku-buildpack-static.git
+  ```
 
-6. Set buildpacks. We use heroku/nodejs to build the project and heroku-buildpack-static to serve it.
+  7. Deploy your site
 
-```
-heroku buildpacks:set heroku/nodejs
-```
+  ```
+  git push heroku main
+  ```
 
-```
-heroku buildpacks:add https://github.com/heroku/heroku-buildpack-static.git
-```
+  ```
+  heroku open
+  ```
 
-7. Deploy your site
+- Vercel
 
-```
-git push heroku main
-```
+  1. vercel.json **SPA Fallback except**
 
-```
-heroku open
-```
+  ```
+  {
+    "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+  }
+  ```
+
+### File environment (.env)
+
+- .env.development
+
+  ```
+  VITE_IS_PRODUCTION=0
+  ```
+
+- .env.production
+
+  ```
+  VITE_IS_PRODUCTION=1
+  ```
+
+- Useage
+
+  ```
+  let value = import.meta.env.VITE_IS_PRODUCTION
+  ```
+
+  - value development = **1** production = **2**
+
+- base URL
+  ```
+  import.meta.env.BASE_URL
+  ```
 
 ---
 
@@ -89,16 +116,4 @@ With PNPM
 
 ```
 pnpm create react-app my-app
-```
-
-With NPM
-
-```
-npx create-react-app my-app
-```
-
-With Yarn
-
-```
-yarn add react
 ```
