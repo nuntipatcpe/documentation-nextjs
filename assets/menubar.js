@@ -288,16 +288,6 @@ export function menuBar() {
         },
       ],
     },
-    //Redux
-    {
-      id: "Redux",
-      subMenu: [
-        // {
-        //   name: "Redux",
-        //   path: "/document/redux",
-        // },
-      ],
-    },
     //Redux Toolkit
     {
       id: "Redux Toolkit",
@@ -364,6 +354,7 @@ export function menuBar() {
         },
       ],
     },
+    //Golang
     {
       id: "Golang",
       subMenu: [
@@ -378,6 +369,16 @@ export function menuBar() {
         {
           name: "GORM",
           path: "/document/golang-GORM",
+        },
+      ],
+    },
+    //node.js
+    {
+      id: "Node.js",
+      subMenu: [
+        {
+          name: "Get Started",
+          path: "/document/nodeJs-get-started",
         },
       ],
     },
