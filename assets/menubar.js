@@ -271,20 +271,12 @@ export function menuBar() {
           path: "/document/nextjs-get-started",
         },
         {
-          name: "getServerSideProps",
-          path: "/document/nextjs-get-Server-Side-Props-ssr",
+          name: "Client side data fetching",
+          path: "/document/nextjs-client-side-data-fetching",
         },
         {
-          name: "getStaticProps",
-          path: "/document/nextjs-get-started-ssg",
-        },
-        {
-          name: "getStaticPaths",
-          path: "/document/nextjs-get-static-paths-dynamic",
-        },
-        {
-          name: "Client side",
-          path: "/document/nextjs-client-side-csr",
+          name: "Server side data fetching",
+          path: "/document/nextjs-server-side-data-fetching",
         },
       ],
     },

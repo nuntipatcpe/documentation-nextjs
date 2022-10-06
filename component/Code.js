@@ -17,11 +17,14 @@ function Code({ children, language }) {
 
   return (
     <>
-      <div className="con-Icon">
+      <div className="con-Icon" style={{ letterSpacing: 0.5 }}>
         <CopyToClipboard text={children} onCopy={() => setTextCoppy(true)}>
           <FaCopy className={copyAc ? "Icon-active" : "Icon"} />
         </CopyToClipboard>
-        <PrismLight language={language === undefined ? "javascript":language} style={a11yDark} >
+        <PrismLight
+          language={language === undefined ? "javascript" : language}
+          style={a11yDark}
+        >
           {children}
         </PrismLight>
       </div>

@@ -1,49 +1,77 @@
+# SPA (Single Page Appication)
+
+**CSR** (Client Side Rendering)
+
+- No need to request server to response or rebder every-time we cheng page
+- Slow rendering (Entire page loading complete)
+- Unfriendly SEO
+
+**SSR** (Server Side Rendering)
+
+- Need to request server to response or rebder every-time we cheng page
+- Faster rendering (Show in first load)
+- Friendly SEO
+
 # Install
 
-With NPM
+- Typescript
 
-```
-npx create-next-app@latest
-```
+  ```
+  pnpm create next-app --typescript
+  ```
 
-With yarn
+- Javascript
 
-```
-yarn create next-app
-```
+  ```
+  pnpm create next-app
+  ```
 
-With pnpm
+# Set Header
 
-```
-pnpm create next-app
-```
+\_app.js
 
-# TypeScript
+- Herder
 
-**New Project**
+  ```
+  import Head from "next/head";
+  ```
 
-With NPM
+  ```
+    <Head>
+    <title>Next.js</title>
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+        crossOrigin="anonymous"
+    />
+    </Head>
+  ```
 
-```
-npx create-next-app@latest --ts
-```
+- Script
 
-With yarn
+  ```
+  <Script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+  crossorigin="anonymous"
+  ></Script>
+  ```
 
-```
-yarn create next-app --typescript
-```
+- style sheet local
 
-With pnpm
+  ```
+  <style jsx>
+  {`
+  .main-content {
+      margin-top: 30px;
+  }
+  `}
+  </style>
+  ```
 
-```
-pnpm create next-app --ts
-```
+  alert.module.css
 
-
-**To get started in an existing project**
-
-```
-touch tsconfig.json
-```
-
+  ```
+  className={style.err}
+  ```
