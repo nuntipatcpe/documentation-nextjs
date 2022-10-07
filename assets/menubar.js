@@ -261,7 +261,6 @@ export function menuBar() {
         },
       ],
     },
-
     //NexJs
     {
       id: "NexJS",
